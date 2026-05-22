@@ -1,3 +1,6 @@
 [submodule "src/mfkey_desktop/flipperzero-protobuf"]
 	path = src/mfkey_desktop/flipperzero-protobuf
 	url = https://github.com/flipperdevices/flipperzero-protobuf
+[submodule "src/mfkey_desktop/flipper/flipperzero-protobuf"]
+	path = src/mfkey_desktop/flipper/flipperzero-protobuf
+	url = https://github.com/flipperdevices/flipperzero-protobuf.git
