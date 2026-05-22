@@ -1,0 +1,33 @@
+[project]
+name = "mfkey-desktop"
+version = "1.0.0"
+description = "Flipper Zero MFKey for Desktop"
+authors = [{ name = "Lemn4t" }]
+requires-python = ">=3.12"
+dependencies = [
+    "protobuf==5.29.6",
+    "pyserial==3.5",
+    "rich==15.0.0",
+]
+
+[project.scripts]
+mfkey-desktop = "mfkey_desktop:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 99
+src = ["src"]
+
+[tool.coverage.run]
+include = ["src/**"]
+
+[dependency-groups]
+dev = [
+    "grpcio-tools==1.71.2",
+    "mypy-protobuf==3.7.0",
+    "protoletariat==3.3.10",
+    "pyinstaller==6.20.0",
+]
