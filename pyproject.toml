@@ -6,8 +6,8 @@ authors = [{ name = "Lemn4t" }]
 requires-python = ">=3.12"
 dependencies = [
     "protobuf==5.29.6",
+    "pyqt6==6.11.0",
     "pyserial==3.5",
-    "rich==15.0.0",
 ]
 
 [project.scripts]
@@ -30,4 +30,5 @@ dev = [
     "mypy-protobuf==3.7.0",
     "protoletariat==3.3.10",
     "pyinstaller==6.20.0",
+    "pyside6==6.11.1",
 ]
