@@ -4,14 +4,10 @@ version = "1.0.0"
 description = "Flipper Zero MFKey for Desktop"
 authors = [{ name = "Lemn4t" }]
 requires-python = ">=3.12"
-dependencies = [
-    "protobuf==5.29.6",
-    "pyqt6==6.11.0",
-    "pyserial==3.5",
-]
+dependencies = ["protobuf==5.29.6", "pyqt6==6.11.0", "pyserial==3.5"]
 
 [project.scripts]
-mfkey-desktop = "mfkey_desktop:main"
+mfkey-desktop = "mfkey_desktop.main:main"
 
 [build-system]
 requires = ["setuptools>=61"]
